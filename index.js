@@ -1,5 +1,5 @@
 const puppeteer = require("puppeteer");
-const config = require("config");
+const config = require("./wave-credentials.js");
 
 (async () => {
   const browser = await puppeteer.launch({ headless: true });
