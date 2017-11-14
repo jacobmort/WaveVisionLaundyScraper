@@ -47,7 +47,7 @@ const config = require("./wave-credentials.js");
       }
     }
   });
-  console.log(`${Date()}, ${washersInUse}, ${dryersInUse}`);
+  console.log(`${new Date().toISOString()}, ${washersInUse}, ${dryersInUse}`);
 
   await browser.close();
 })();
