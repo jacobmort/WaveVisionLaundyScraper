@@ -10,7 +10,7 @@ const config = require("./wave-credentials.js");
   await page.type("#txtUserID", config.username);
   await page.type("#txtPassword", config.password);
   await page.click("#btnLogin");
-
+  await page.waitFor("#HeaderContent");
   await page.goto("https://www.mywavevision.com/RoomStatusV2.aspx", {
     timeout: 90000
   });
